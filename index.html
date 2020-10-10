@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逐帧动画</title>
+    <style>
+            @keyframes loading{
+            0%{background-position: 0 0;}
+            100%{background-position: -800px 0;}
+        }
+        .a{
+            height: 100px;
+            width: 100px;
+            background: url('imgs/loading.png')left no-repeat;
+            animation: loading 1s steps(8) infinite;
+        }
+                @keyframes walk{
+            0%{background-position: 0 0;}
+            100%{background-position: -1080px 0;}
+        }
+        .b{
+            height: 293px;
+            width: 180px;
+            background: url('imgs/walk.jpg')left no-repeat;
+            animation: walk .5s steps(6) infinite;  
+        }
+        @keyframes hua{
+            0%{background-position: 0 0;}
+            100%{background-position:-438px 0;}
+        }
+        .c{
+            width: 73px;
+            height: 119px;
+            background: url('imgs/hua.jpg')left no-repeat ;
+        animation: hua 1s steps(6) infinite;
+        }
+        @keyframes run2{
+            0%{background-position: 0 0;}
+            100%{background-position:-1372px 0;}
+        }
+        .d{
+            width: 137.2px;
+            height: 156px;
+            background: url('imgs/run2.png')left no-repeat;
+            animation: run2 2s steps(10) infinite    
+        }
+                @keyframes jd{
+            0%{background-position: 0 0;}
+            100%{background-position:0 -2045px;}
+        }
+        .e{
+            width: 678px;
+            height: 663px;
+            background: url('imgs/jd.png')left no-repeat ;
+        animation: jd 5s steps(3) infinite;
+        }
+        @keyframes run{
+            0%{background-position: 0 0;}
+            100%{background-position: -1680px 0;}
+        }
+        .f{
+            height: 140px;
+            width: 140px;
+            background: url('imgs/run.png')right no-repeat;
+       animation: run 3s steps(12) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <hr>
+    <div class="b"></div>
+    <hr>
+    <div class="c"></div>
+    <hr>
+    <div class="d"></div>
+    <hr>
+    <div class="e"></div>
+    <hr>
+    <div class="f"></div>
+</body>
+</html>
